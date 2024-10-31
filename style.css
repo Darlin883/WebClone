@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.resource-header{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+}
+
+.resource-header-img{
+    width: 50px;
+    height: 50px;
+    background-image: url("https://www.svgrepo.com/download/345620/codepen.svg");
+    background-size: cover;
+    background-position: center;
+    filter:invert(100%);
+    margin-top: 1.1%;
+}
+
+.resource-header-leftSide{
+    flex-shrink: 1px;
+    height: 70px;
+}
+
+.resource-header-rightSide{
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    height: 70px; 
+    align-items: center;
+}
+
+.resource-header-rightSide a{
+    background-color: aliceblue;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    line-height: 47px;
+    height: 45px;
+    color: white;
+    background-color: rgb(62, 69, 78);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.resource-header-rightSide ion-icon{
+    width: 20px;
+    height: 45px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    /* --ionicon-stroke-width: 20px; */
+}
+
+.header-hero-container{
+    width: 100%;
+    height: 764px;
+    background-color: rgb(82, 91, 99);
+    
+}
+
+#header-hero-bar a{
+    text-decoration: none;
+    color: darkgray;
+}
+#header-hero-bar a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#header-hero-bar{
+    background: transparent; 
+    padding: 1rem 0;
+    box-shadow: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    color: white;
+    transition: background-color 0.3s ease; /* smooth transition */
+}
+#header-hero-bar.scrolled{
+    background-color: white;
+    color: black;
+}
+.nav{
+    color: white;
+}
+.nav.scrolled{
+    color: black;
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 92px;
+    position: relative;
+}
+
+.flex-container-left{
+    margin-left: 15%;
+}
+
+.flex-container-right{
+    width: 460px;
+    height: 92px;
+    margin-right: 220px;
+}
+
+.flex-container ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    line-height: 60px;
+    list-style: none;
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 3.5rem;
+    color: #f69314;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.how-it-works{
+    padding:60px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(241, 241, 241);
+}
+
+.item-holder{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 900px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.item-box ion-icon{
+    font-size: 45px;
+    margin-left: 42%;
+    color: #f69314;
+    /* position: initial; */
+}
+.item-box{
+    width:250px;
+    height: 200px;
+}  
+/* properties */
+.properties{
+    height: 550px;
+}
+  .property-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-content: center; */
+    gap: 10%;
+    height:100%;
+    margin: 5% 11% 0;
+    
+  }
+  .property-container img{
+    width:70%;
+  }
+  .property-card-container {
+    display: flex;
+    padding: 0 1% 0;
+    height: 60%;
+    width:100%;
+  }
+  .property-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5%;
+    gap: 7%;
+  }
+  .price{
+    font-size:18px;
+    color:hsl(210, 10%, 23%);
+    font-weight:600;
+  }
+  .baths,
+  .beds {
+    padding-right: 3%;
+    border-right: solid 1px black;
+  }
+  .baths,
+  .beds, .sqft, .location{
+    font-size:12.8px
+  }
+  .property-info {
+    display: flex;
+    gap: 3%
+  }
+  #listing-btn {
+    align-self: center;
+    font-size: large;
+    height: 45px;
+    width: 270px;
+    position: absolute;
+    margin-top: 34%;
+    border-radius: 28px;
+    background-color: #f69314;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+
+  }
+
+.the-best{
+    width: 1500px;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.item-column{
+    width: 450px;
+    height: 650px;
+    margin-top: 3%;
+}
+.item-1{
+   margin-top: 4%;
+    width: 550px;
+    height: 550px;
+}
+#Property-img{
+    background-image: url("https://eycrk5cno2n.exactdn.com/wp-content/uploads/2022/02/The-Importance-of-High-Quality-Real-Estate-Photos-v3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.the-best ul{
+    margin-left: 4.5%;
+    color: gray;
+}
+
+.the-best button{
+    margin-top: 15%;
+    width: 155px;
+    height: 50px;
+    background-color: #f69314;
+    color: white;
+    border: 1px solid #f69314;
+    font-size: 17px;
+    border-radius: 27px;
+}
+
+.services{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(241, 241, 241);
+}
+.services h2{
+    font-size: 40px;
+    margin-top: 4%;
+}
+.services ion-icon{
+    font-size: 45px;
+    margin-top: 1%;
+    color: #f69314;
+    position: absolute;
+}
+
+.services a{
+    color: #f69314;
+    text-decoration: none;
+}
+
+.services a:hover{
+    text-decoration:underline;
+}
+.serv-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: space-evenly; /* Center grid items within the container */
+    width: 1200px;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+    margin: auto;
+    /* background-color: brown; */
+}
+.serv-item{
+    margin-top: 4%;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 5%;
+    /* background-color: beige; */
+}
+/* testimonials */
+.client-say{
+    height: 470px;
+    text-align: center;
+}
+.testimonials p{
+    margin: 0 auto;
+    padding: 3% 0;
+    font-size: 27px;
+    font-style: italic;
+    max-width: 740px;
+    text-align: center;
+    color: #696969;
+}
+.testimonial-client{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-client img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+}
+
+.contact-us{
+    width: 100%;
+    height: 890px;
+    background-color: rgb(241, 241, 241);
+}
+
+#contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1300px;
+    height: 650px;
+    /* background-color: aquamarine; */
+}
+
+.contact-item{
+    width: 625px;
+    height:500px;
+    background-color: white;
+    padding: 3rem;
+}
+.contact-item-1{
+    width: 760px;
+    height: 650px;
+}
+.contact-item-2{
+    width: 495px;
+    height: 300px;
+    padding: 2rem;
+}
+.input-text{
+    width: 650px;
+    padding: 10px;
+    height: 42px;
+    border: 1px solid gray;
+    border-radius: 27px;
+}
+
+.contact-item button{
+    background-color: #f69314;
+    border: 1px solid  #f69314;
+    color: white;
+    width: 165px;
+    height: 45px;
+    font-size: 17px;
+    border-radius: 29px;
+}
+
+.contact-item label{
+    font-size: 19px;
+}
+
+.contact-item a{
+    text-decoration: none;
+}
+.contact-item a:hover{
+    text-decoration: underline;
+}
+
+/* Agents */
+.Agents{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.agents-container{
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+}
+.agent-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 900px; 
+    height: 300px; 
+}
+.agent-pfp{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.agent-item{
+    margin-top: 4%;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(241, 241, 241);
+    padding: 0 14px;
+    margin-bottom: 5%;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 600px;
+    padding: 8rem 0px;
+    background-color: #333;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: auto;
+    width: 1200px;
+    height: 288px;
+    padding: 0px  20px;
+    padding-bottom: 6rem;
+
+}
+.footer-container a{
+    text-align: center;
+    color: darkgray;
+    text-decoration: none;
+    margin-left: 18%;
+    font-size: 20px;
+    transition: 5ms;
+}
+.footer-container a:hover{
+    color: white;
+}
+.right-rounded{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #f69314;
+    font-size: 16px;
+    color: #000;
+    padding: 10px 30px 9px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    margin-right: 13.8%;
+    position: absolute;
+    right: 0;
+}
+.footer-container input{
+    border-radius: 30px;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+}
+.icon-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 10px;
+    position:absolute;
+}
+.footer-container ion-icon{
+    font-size: 20px;
+    margin-top: 1%;
+    color: #696969;
+}
