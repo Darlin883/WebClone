@@ -68,17 +68,18 @@
     
 }
 
-#header-hero-bar a{
+#header-hero-bar a {
     text-decoration: none;
     color: darkgray;
 }
-#header-hero-bar a:hover{
+
+#header-hero-bar a:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-#header-hero-bar{
-    background: transparent; 
+#header-hero-bar {
+    background: transparent;
     padding: 1rem 0;
     box-shadow: none;
     position: fixed;
@@ -88,15 +89,21 @@
     color: white;
     transition: background-color 0.3s ease; /* smooth transition */
 }
-#header-hero-bar.scrolled{
+
+#header-hero-bar.scrolled {
     background-color: white;
     color: black;
 }
-.nav{
-    color: white;
+
+/* Update this selector with !important for overriding any previous link styles */
+.nav.scrolled a {
+    text-decoration: none;
+    color: black !important;
 }
-.nav.scrolled{
-    color: black;
+
+.nav.scrolled a:hover {
+    text-decoration: none;
+    color: #f69314 !important;
 }
 
 
